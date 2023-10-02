@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="head">
+            <h1>Recipe Generator</h1>
+            <button onclick="reqInfo()">Generate</button>
+        </section>
+        <section id="results">
+            <div class="box">
+                <div class="params">
+                    <label for="calories-min">Calories: </label>
+                    <input class="calories" type="number" name="calories-min" id="calories-min" min="0" value="0">
+                    <p>-</p>
+                    <input class="calories" type="number" name="calories-max" id="calories-max" max="9999" value="500">
+                </div>
+            </div>
+            <div class="box" id="recipes"></div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
